@@ -48,13 +48,13 @@ def mmToText(mm):
 	mm = int(mm - kilo * 1000000 - meter * 1000 - centi * 10)
 
 	if (kilo > 0):
-		result = "{}k".format(kilo) + " {}m".format(meter) + " {}cm".format(centi) + " {}mm".format(mm)
+		result = "{}".format(kilo) + "{}.".format(meter) + "{}".format(centi) + "{} m".format(mm)
 	elif (meter > 0):
-		result = "{}m".format(meter) + " {}cm".format(centi) + " {}mm".format(mm)
+		result = "{}.".format(meter) + " {}".format(centi) + " {} m".format(mm)
 	elif (centi > 0):
-		result = "{}cm".format(centi) + " {}mm".format(mm)
+		result = "0.{}".format(centi) + " {} m".format(mm)
 	elif (mm >= 0):
-		result = "{}mm".format(mm)
+		result = "0.00{}".format(mm)
 
     # result = ("{}d".format(days) if days else "") + \
     #          ("{}h".format(hours) if hours else "") + \

@@ -46,7 +46,7 @@ $(function() {
                             "<li>X: <b>" + xMovement + "</b></li>" +
                             "<li>Y: <b>" + yMovement + "</b></li>" +
                             "<li>Z: <b>" + zMovement + "</b></li>" +
-                            "<li>T0: <b>" + eMovement + "</b></li>" +
+                            "<li>Extruder: <b>" + eMovement + "</b></li>" +
                             "</ul>");
         }
 
