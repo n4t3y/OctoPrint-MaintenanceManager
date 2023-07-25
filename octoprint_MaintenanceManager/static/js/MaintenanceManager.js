@@ -140,6 +140,7 @@ $(function() {
         // Elements to bind to, e.g. #settings_plugin_MaintenanceManager, #tab_plugin_MaintenanceManager, ...
         elements: [
             "#settings_plugin_MaintenanceManager"
+            "#tab_plugin_MaintenanceManager" //added NL
         ]
     });
 });
